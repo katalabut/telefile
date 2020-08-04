@@ -1,0 +1,19 @@
+{
+  "name": "telefile-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Igor",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-telegram-bot-api": "^0.50.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

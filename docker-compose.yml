@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  nodejs:
+    build: .
+    restart: unless-stopped
+    command: npm run dev
+    environment:
+      - PORT
+      - TELEGRAM_TOKENN
+    ports:
+      - "3000:${PORT}"
+    volumes:
+      - .:/usr/src/app
+      - ./node_modules:/usr/src/app/node_modules
