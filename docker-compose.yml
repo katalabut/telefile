@@ -7,7 +7,7 @@ services:
     command: npm run dev
     environment:
       - PORT
-      - TELEGRAM_TOKENN
+      - TELEGRAM_TOKEN
     ports:
       - "3000:${PORT}"
     volumes:
